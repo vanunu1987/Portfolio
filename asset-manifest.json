@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.534bf8a7.chunk.css",
-    "main.js": "/react-gh-pages/static/js/main.6701444e.chunk.js",
-    "main.js.map": "/react-gh-pages/static/js/main.6701444e.chunk.js.map",
-    "runtime~main.js": "/react-gh-pages/static/js/runtime~main.1f4941a6.js",
-    "runtime~main.js.map": "/react-gh-pages/static/js/runtime~main.1f4941a6.js.map",
-    "static/js/2.3d32cb7c.chunk.js": "/react-gh-pages/static/js/2.3d32cb7c.chunk.js",
-    "static/js/2.3d32cb7c.chunk.js.map": "/react-gh-pages/static/js/2.3d32cb7c.chunk.js.map",
-    "index.html": "/react-gh-pages/index.html",
-    "precache-manifest.44887dc4af11ea92482ce885110d3b79.js": "/react-gh-pages/precache-manifest.44887dc4af11ea92482ce885110d3b79.js",
-    "service-worker.js": "/react-gh-pages/service-worker.js",
-    "static/css/main.534bf8a7.chunk.css.map": "/react-gh-pages/static/css/main.534bf8a7.chunk.css.map",
-    "static/media/About.module.scss": "/react-gh-pages/static/media/about4.df0bece0.png",
-    "static/media/Home.module.scss": "/react-gh-pages/static/media/hatimg4.c450df69.png",
-    "static/media/Portfolio.module.scss": "/react-gh-pages/static/media/port1.db47bd62.png"
+    "main.css": "/Portfolio/static/css/main.6686f072.chunk.css",
+    "main.js": "/Portfolio/static/js/main.fe342047.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.fe342047.chunk.js.map",
+    "runtime~main.js": "/Portfolio/static/js/runtime~main.aeacf694.js",
+    "runtime~main.js.map": "/Portfolio/static/js/runtime~main.aeacf694.js.map",
+    "static/js/2.3d32cb7c.chunk.js": "/Portfolio/static/js/2.3d32cb7c.chunk.js",
+    "static/js/2.3d32cb7c.chunk.js.map": "/Portfolio/static/js/2.3d32cb7c.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "precache-manifest.3e7ef7289801adceda55386f9f69898c.js": "/Portfolio/precache-manifest.3e7ef7289801adceda55386f9f69898c.js",
+    "service-worker.js": "/Portfolio/service-worker.js",
+    "static/css/main.6686f072.chunk.css.map": "/Portfolio/static/css/main.6686f072.chunk.css.map",
+    "static/media/About.module.scss": "/Portfolio/static/media/about4.df0bece0.png",
+    "static/media/Home.module.scss": "/Portfolio/static/media/hatimg4.c450df69.png",
+    "static/media/Portfolio.module.scss": "/Portfolio/static/media/port1.db47bd62.png"
   }
 }
