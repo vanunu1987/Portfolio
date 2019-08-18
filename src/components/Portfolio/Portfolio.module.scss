@@ -49,11 +49,10 @@
         top: 366px;
     }
 
-    .work1,.work2,.work3,.work4{
+    .work1,.work2,.work3{
         display: flex;
         width: 199px;
         height: 184px;
-        background-image: url('../../assets/imags/portfolioImg/port1.png');
         margin-left: 13px;
         cursor: pointer;
 
@@ -76,3 +75,14 @@
         }
 
     }
+    .work1{
+     background-image: url('../../assets/imags/portfolioImg/port1.png');
+    }
+    .work2{
+     background-image: url('../../assets/imags/portfolioImg/port2.png');
+    }
+    .work3{
+     background-image: url('../../assets/imags/portfolioImg/port3.png');
+    }
+
+    
