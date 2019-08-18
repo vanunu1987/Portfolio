@@ -1,0 +1,42 @@
+
+
+.nav-container{
+    // background-color: #000000;
+    // @font-face { font-family: 'Lato-Light'; src:('../../assets/fonts/Lato/Lato-Light.ttf')};
+    // font-family: 'Lato-Light';
+    @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+    font-family: 'Lato', sans-serif;    
+
+}
+
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+.ul-container{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: baseline;
+    margin-left: 21.4%;
+    margin-top: 82px;
+    li{
+        margin-top: 6px;
+        letter-spacing: 0;
+        color: #FCFCFC;
+        font-weight: 300;
+        cursor: pointer;
+        
+
+    }
+
+    .active{
+        color: #FCDD00;
+        &::after{
+            margin-left: 45px;
+            content: '+'
+            
+        }
+    }
+}

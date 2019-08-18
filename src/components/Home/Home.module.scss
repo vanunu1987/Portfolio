@@ -1,0 +1,100 @@
+
+
+body{
+//     @font-face { font-family: 'Lato-Black'; src:url('../../assets/fonts/Lato/Lato-Regular.ttf')};
+//     font-family: 'Lato-Black';
+}
+
+.main-container{
+    // @font-face { font-family: 'Lato-Black'; src:url('../../assets/fonts/Lato/Lato-Black.ttf')};
+    // font-family: 'Lato-Black';
+    @import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
+    font-family: 'Lato', sans-serif;
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+   
+}
+
+.title{
+    position: absolute;
+box-sizing: border-box;
+top: 238px;
+left: 457px;
+width: 262px;
+height: 103px;
+text-align: left;
+letter-spacing: 0;
+opacity: 1;
+color: #FCFCFC;
+font-size: 4rem;
+margin: 0;
+padding: 19px 0px ;
+z-index: 2;
+
+&::first-letter{
+    color: #FEDD00;
+}
+
+
+}
+    .sub-title{
+    // @font-face { font-family: 'Lato-Light'; src:url('../../assets/fonts/Lato/Lato-Light.ttf')};
+    // font-family: 'Lato-Light';    
+    @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
+    font-family: 'Lato', sans-serif;
+    position: absolute;
+    top: 235px;
+    left: 515px;
+    width: 396px;
+    height: 29px;
+    text-align: center;
+    letter-spacing: 0;
+    opacity: 1;
+    color: #FEFEFE;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    span{
+        color: #FFDE00;
+    }
+    }
+
+.img-container-4{
+    width: 365px;
+    height: 52px;
+    background-image: url('../../assets/imags/hatimgs/hatimg4.png');
+    position: absolute;
+    top: 312px;
+    left: 448px;
+
+}
+.img-container-3{
+    width: 325px;
+    height: 50px;
+    background-image: url('../../assets/imags/hatimgs/hatimg3.png');
+    position: absolute;
+    top: 377px;
+    left: 492px;
+}
+.img-container-2{
+    width: 323px;
+    height: 50px;
+    background-image: url('../../assets/imags/hatimgs/hatimg2.png');
+    position: absolute;
+    top: 440px;
+    left: 637px;
+
+}
+.img-container-1{
+    width: 323px;
+    height: 50px;
+    background-image: url('../../assets/imags/hatimgs/hatimg1.png');
+    position: absolute;
+    top: 502px;
+    left: 492px;
+
+}
+

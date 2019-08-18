@@ -1,0 +1,32 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+.paging-container{
+    position: absolute;
+    top: 585px;
+    left: 598px;
+    list-style: none;
+    width: 100%;
+    ul{
+    display: flex;
+
+    }
+    li{
+        cursor: pointer;
+        border-radius: 50%;
+        width: 9px;
+        height: 9px;
+        background-color: #FCDD00;
+        opacity: .3;
+        margin-left: 6px;
+
+    }
+
+    .active{
+        background-color: #FCDD00;
+        opacity: 1;
+       
+    }
+}
