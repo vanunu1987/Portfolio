@@ -21,9 +21,9 @@ class Layout  extends Component {
         height: 0,
         activeCmp: {home: true,
                     about: false,   
-                    Portfolio: false,
-                    contact: false,
-                    skills: false}
+                    skills: false,
+                    portfolio: false,
+                    contact: false,}
      }
 
      componentDidMount(){
@@ -40,11 +40,13 @@ class Layout  extends Component {
         
         return ( 
             <>
+            <div className={classes['layout-container']}>
             <NavBar components={this.state.activeCmp} active={(val)=>this.hendelActiveButtom(val)}/>
             <div className={classes['main-container']}>
                     <Tagname height={this.state.height}/>
             </div>
             <Paging height={this.state.height} active={(val)=>this.hendelActiveButtom(val)} components={this.state.activeCmp}/>
+            </div>
             </>
          );
     }

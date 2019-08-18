@@ -10,10 +10,13 @@ body{
 .main-container{
     // @font-face { font-family: 'Lato-Black'; src:url('../../assets/fonts/Lato/Lato-Black.ttf')};
     // font-family: 'Lato-Black';
-    height: 100vh;
+    width: 100vw;
     display: flex;
     align-content: center;
     justify-content: center;
    
 }
 
+.layout-container{
+    width: 100vw;
+}
