@@ -21,7 +21,7 @@ body{
     position: absolute;
 box-sizing: border-box;
 top: 238px;
-left: 457px;
+left: 50%;
 width: 262px;
 height: 103px;
 text-align: left;
@@ -32,6 +32,7 @@ font-size: 4rem;
 margin: 0;
 padding: 19px 0px ;
 z-index: 2;
+margin-left: -253px;
 
 &::first-letter{
     color: #FEDD00;
@@ -46,7 +47,7 @@ z-index: 2;
     font-family: 'Lato', sans-serif;
     position: absolute;
     top: 235px;
-    left: 515px;
+    left: 50%;
     width: 396px;
     height: 29px;
     text-align: center;
@@ -56,6 +57,8 @@ z-index: 2;
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
+    margin-left: -200px;
+
     span{
         color: #FFDE00;
     }
@@ -67,7 +70,8 @@ z-index: 2;
     background-image: url('../../assets/imags/hatimgs/hatimg4.png');
     position: absolute;
     top: 312px;
-    left: 448px;
+    left: 50%;
+    margin-left: -271px;
 
 }
 .img-container-3{
@@ -76,7 +80,8 @@ z-index: 2;
     background-image: url('../../assets/imags/hatimgs/hatimg3.png');
     position: absolute;
     top: 377px;
-    left: 492px;
+    left: 50%;
+    margin-left: -227px;
 }
 .img-container-2{
     width: 323px;
@@ -84,7 +89,8 @@ z-index: 2;
     background-image: url('../../assets/imags/hatimgs/hatimg2.png');
     position: absolute;
     top: 440px;
-    left: 637px;
+    left: 50%;
+    margin-left: -85px;
 
 }
 .img-container-1{
@@ -93,7 +99,8 @@ z-index: 2;
     background-image: url('../../assets/imags/hatimgs/hatimg1.png');
     position: absolute;
     top: 502px;
-    left: 492px;
+    left: 50%;
+    margin-left: -225px;
 
 }
 

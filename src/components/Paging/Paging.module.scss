@@ -6,7 +6,8 @@ ul,li{
 .paging-container{
     position: absolute;
     top: 585px;
-    left: 598px;
+    left: 50%;
+    margin-left: -200px;
     list-style: none;
     width: 400px;
     ul{

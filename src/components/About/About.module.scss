@@ -1,13 +1,11 @@
 
 
  .sub-title{
-    // @font-face { font-family: 'Lato-Light'; src:url('../../assets/fonts/Lato/Lato-Light.ttf')};
-    // font-family: 'Lato-Light';    
     @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
     font-family: 'Lato', sans-serif;
     position: absolute;
     top: 235px;
-    left: 515px;
+    left: 50%;
     width: 396px;
     height: 29px;
     text-align: center;
@@ -17,6 +15,7 @@
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
+    margin-left: -200px;
     span{
         color: #FFDE00;
     }
@@ -26,7 +25,7 @@
         position: absolute;
     box-sizing: border-box;
     top: 238px;
-    left: 457px;
+    left: 50%;
     width: 262px;
     height: 103px;
     text-align: left;
@@ -37,6 +36,7 @@
     margin: 0;
     padding: 19px 0px ;
     z-index: 2;
+    margin-left: -253px;
     
     &::first-letter{
         color: #FEDD00;
@@ -50,7 +50,8 @@
         margin: 0;
         position: absolute;
         top: 349px;
-        left: 491px;
+        left: 50%;
+        margin-left: -238px;
         width: 254px;
         height: 234px;
         text-align: left;
@@ -75,7 +76,8 @@
         background-image: url('../../assets/imags/aboutImg/about4.png');
         position: absolute;
         top: 507px;
-        left: 448px;
+        left: 50%;
+        margin-left: 126px;
     
     }
     .img-container-3{
@@ -84,11 +86,13 @@
         background-image: url('../../assets/imags/aboutImg/about3.png');
         position: absolute;
         top: 441px;
-        left: 492px;
+        left: 50%;
+        margin-left: 148px;
     }
     .img-container-2{
         top: 376px;
-        left: 832px;
+        left: 50%;
+        margin-left: 113px;
         width: 188px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about2.png');
@@ -96,7 +100,8 @@
     }
     .img-container-1{
         top: 312px;
-        left: 790px;
+        left: 50%;
+        margin-left: 70px;
         width: 329px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about1.png');

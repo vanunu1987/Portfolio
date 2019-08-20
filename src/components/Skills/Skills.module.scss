@@ -1,11 +1,9 @@
 .sub-title{
-    // @font-face { font-family: 'Lato-Light'; src:url('../../assets/fonts/Lato/Lato-Light.ttf')};
-    // font-family: 'Lato-Light';    
     @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
     font-family: 'Lato', sans-serif;
     position: absolute;
     top: 235px;
-    left: 515px;
+    left: 50%;
     width: 396px;
     height: 29px;
     text-align: center;
@@ -15,6 +13,7 @@
     padding: 0;
     margin: 0;
     font-size: 1.5rem;
+    margin-left: -200px;
     span{
         color: #FFDE00;
     }
@@ -24,7 +23,7 @@
         position: absolute;
     box-sizing: border-box;
     top: 238px;
-    left: 457px;
+    left: 50%;
     width: 262px;
     height: 103px;
     text-align: left;
@@ -35,6 +34,7 @@
     margin: 0;
     padding: 19px 0px ;
     z-index: 2;
+    margin-left: -253px;
     
     &::first-letter{
         color: #FEDD00;

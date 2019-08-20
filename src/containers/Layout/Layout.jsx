@@ -14,38 +14,36 @@ class Layout  extends Component {
             home: Home,
             about: About,
             portfolio: Portfolio,
-            contact: Contact,
-            skills: Skills
+            skills: Skills,
+            contact: Contact
             
         },
-        height: 0,
-        activeCmp: {home: true,
-                    about: false,   
-                    skills: false,
-                    portfolio: false,
-                    contact: false,}
+       
+        activeCmp: 'home'
      }
 
-     componentDidMount(){
-        this.setState({height: window.innerWidth });
-      }
+    
 
       hendelActiveButtom = (val)=>{
         this.setState({activeCmp:val})
 
       }
     render() { 
-        let activePrm= Object.keys(this.state.activeCmp).filter(obj=>this.state.activeCmp[obj]).toString('')
-        const Tagname = this.state.component[activePrm||'home']
+        const Tagname = this.state.component[this.state.activeCmp||'home']
         
         return ( 
             <>
             <div className={classes['layout-container']}>
-            <NavBar components={this.state.activeCmp} active={(val)=>this.hendelActiveButtom(val)}/>
-            <div className={classes['main-container']}>
-                    <Tagname height={this.state.height}/>
-            </div>
-            <Paging height={this.state.height} active={(val)=>this.hendelActiveButtom(val)} components={this.state.activeCmp}/>
+                <NavBar components={this.state.component} 
+                active={(val)=>this.hendelActiveButtom(val)}
+                activeCmp={this.state.activeCmp}/>
+                <div className={classes['main-container']}>
+                        <Tagname />
+                </div>
+                <Paging height={this.state.height} 
+                active={(val)=>this.hendelActiveButtom(val)} 
+                components={this.state.component}
+                activeCmp={this.state.activeCmp}/>
             </div>
             </>
          );
