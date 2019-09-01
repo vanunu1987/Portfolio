@@ -24,7 +24,7 @@ class Layout  extends Component {
 
     
 
-      hendelActiveButtom = (val)=>{
+      handleActiveButtom = (val)=>{
         this.setState({activeCmp:val})
 
       }
@@ -35,13 +35,13 @@ class Layout  extends Component {
             <>
             <div className={classes['layout-container']}>
                 <NavBar components={this.state.component} 
-                active={(val)=>this.hendelActiveButtom(val)}
+                active={(val)=>this.handleActiveButtom(val)}
                 activeCmp={this.state.activeCmp}/>
                 <div className={classes['main-container']}>
                         <Tagname />
                 </div>
                 <Paging height={this.state.height} 
-                active={(val)=>this.hendelActiveButtom(val)} 
+                active={(val)=>this.handleActiveButtom(val)} 
                 components={this.state.component}
                 activeCmp={this.state.activeCmp}/>
             </div>

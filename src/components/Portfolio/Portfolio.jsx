@@ -4,7 +4,7 @@ const portfolio = (props) =>{
     
    
     return(
-        <div>
+        <div className={classes['main-port-container']}>
             <p className={classes['sub-title']} ><span>Yair Vanunu</span> full stack web developer</p>
             <h1 className={classes['title']} >PORTFOLIO</h1>
             <div className={classes['portfolio-container']} >

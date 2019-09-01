@@ -3,7 +3,7 @@ import classes from './About.module.scss'
 const about = (props) =>{
     
     return(
-        <div>
+        <div className={classes['about-container']}>
             <p className={classes['sub-title']} ><span>Yair Vanunu</span> full stack web developer</p>
             <h1 className={classes['title']} >ABOUT</h1>
             <p className={classes['paragraph']} > 
