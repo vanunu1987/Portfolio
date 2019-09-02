@@ -1,12 +1,13 @@
 import React from 'react' 
 import classes from './Portfolio.module.scss'
+import HeadTitle from '../HeadTitle/HeadTitle'
+
 const portfolio = (props) =>{
     
    
     return(
         <div className={classes['main-port-container']}>
-            <p className={classes['sub-title']} ><span>Yair Vanunu</span> full stack web developer</p>
-            <h1 className={classes['title']} >PORTFOLIO</h1>
+            <HeadTitle title="PORTFOLIO" activeAnimation={props.activeAnimation}/>
             <div className={classes['portfolio-container']} >
                 <a href="https://makeappoint.herokuapp.com/">
                 <div className={classes['work1']}>

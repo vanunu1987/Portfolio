@@ -19,13 +19,17 @@ class Layout  extends Component {
             
         },
        
-        activeCmp: 'home'
+        activeCmp: 'home',
+        animation: false
      }
 
     
 
       handleActiveButtom = (val)=>{
-        this.setState({activeCmp:val})
+          this.setState({animation:true})
+          setTimeout(()=>{
+              this.setState({activeCmp:val,animation:false})
+          },300)
 
       }
     render() { 
@@ -38,7 +42,7 @@ class Layout  extends Component {
                 active={(val)=>this.handleActiveButtom(val)}
                 activeCmp={this.state.activeCmp}/>
                 <div className={classes['main-container']}>
-                        <Tagname />
+                        <Tagname activeAnimation={this.state.animation}/>
                 </div>
                 <Paging height={this.state.height} 
                 active={(val)=>this.handleActiveButtom(val)} 

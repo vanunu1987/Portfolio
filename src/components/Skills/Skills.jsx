@@ -1,11 +1,12 @@
 import React from 'react' 
 import classes from './Skills.module.scss'
+import HeadTitle from '../HeadTitle/HeadTitle'
+
 const skills = (props) =>{
     
     return(
         <div>
-            <p className={classes['sub-title']} ><span>Yair Vanunu</span> full stack web developer</p>
-            <h1 className={classes['title']} >SKILLS</h1>
+            <HeadTitle title="SKILLS" activeAnimation={props.activeAnimation}/>
             
         </div>
     )

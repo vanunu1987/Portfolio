@@ -1,11 +1,11 @@
 import React from 'react' 
 import classes from './About.module.scss'
+import HeadTitle from '../HeadTitle/HeadTitle'
 const about = (props) =>{
     
     return(
         <div className={classes['about-container']}>
-            <p className={classes['sub-title']} ><span>Yair Vanunu</span> full stack web developer</p>
-            <h1 className={classes['title']} >ABOUT</h1>
+            <HeadTitle title="ABOUT" activeAnimation={props.activeAnimation}/>
             <p className={classes['paragraph']} > 
             Full Stack developer with hands-on <br/>
             experience in developing Progressive <br/>
