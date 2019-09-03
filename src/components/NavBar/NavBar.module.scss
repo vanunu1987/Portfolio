@@ -27,7 +27,8 @@ ul,li{
         color: #FCFCFC;
         font-weight: 300;
         cursor: pointer;
-        
+        opacity: 1;
+        transition: all .6s
 
     }
 
@@ -39,4 +40,15 @@ ul,li{
             
         }
     }
+    .active-animation{
+
+        animation-name: disappear;
+        animation-duration: .7s;
+    }
+}
+
+
+@keyframes disappear{
+    0% {opacity: 0}
+    100% {opacity: 1}
 }

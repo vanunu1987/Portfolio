@@ -14,8 +14,10 @@
     margin: 0;
     font-size: 1.5rem;
     margin-left: -200px;
+    transition: all 1s;
     span{
         color: #FFDE00;
+
     }
     }
 
@@ -35,14 +37,39 @@
     padding: 19px 0px ;
     z-index: 2;
     margin-left: -253px;
-    transition: all .7s ease-out;
+    transition: all .6s ease-out;
     
     &::first-letter{
         color: #FEDD00;
     }
 }
-
 .active{
-    transform: scale(0) translate(-700px,-600px) ;
+    transform: rotate(45deg) translateY(-200px);
+	opacity: 0;
+	filter: blur(20px);
+}
+.sub-title span{
+    transition-delay: 0.4s;
+
+}
+
+.active1{
+    transform:translate(-280px,-220px) scale(0) ;
+    opacity: 0;
+}
+.active2{
+    transform:translate(-280px,-200px) scale(0) ;
+    opacity: 0;
+}
+.active3{
+    transform:translate(-250px,-150px) scale(0) ;
+    opacity: 0;
+}
+.active4{
+    transform:translate(-250px,-120px) scale(0) ;
+    opacity: 0;
+}
+.active5{
+    transform:translate(-250px,-100px) scale(0) ;
     opacity: 0;
 }

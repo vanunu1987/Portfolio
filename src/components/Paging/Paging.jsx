@@ -3,7 +3,6 @@
 import React from 'react' 
 import classes from './Paging.module.scss'
 const Paging = (props) =>{
-   
     let navList = Object.keys(props.components).map((cmp)=>(<li key={cmp} 
     onClick={()=>props.active(cmp)} 
     className={props.activeCmp===cmp ?classes['active']:''}>

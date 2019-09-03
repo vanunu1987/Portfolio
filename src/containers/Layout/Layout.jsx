@@ -29,7 +29,7 @@ class Layout  extends Component {
           this.setState({animation:true})
           setTimeout(()=>{
               this.setState({activeCmp:val,animation:false})
-          },300)
+          },500)
 
       }
     render() { 
@@ -40,14 +40,16 @@ class Layout  extends Component {
             <div className={classes['layout-container']}>
                 <NavBar components={this.state.component} 
                 active={(val)=>this.handleActiveButtom(val)}
-                activeCmp={this.state.activeCmp}/>
+                activeCmp={this.state.activeCmp}
+                activeAnimation={this.state.animation}/>
                 <div className={classes['main-container']}>
                         <Tagname activeAnimation={this.state.animation}/>
                 </div>
                 <Paging height={this.state.height} 
                 active={(val)=>this.handleActiveButtom(val)} 
                 components={this.state.component}
-                activeCmp={this.state.activeCmp}/>
+                activeCmp={this.state.activeCmp}
+                />
             </div>
             </>
          );
