@@ -28,12 +28,19 @@ ul,li{
         font-weight: 300;
         cursor: pointer;
         opacity: 1;
-        transition: all .6s
+        transition: all .6s;
+        &:hover{
+            color: darken(#FCFCFC, 30%);
+        }
+    
 
     }
 
     .active{
         color: #FCDD00;
+        &:hover{
+            color: lighten(#FCDD00, 30%);
+        }
         &::after{
             margin-left: 45px;
             content: '+'

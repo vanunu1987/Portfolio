@@ -45,20 +45,27 @@
     }
     .work1{
      background-image: url('../../assets/imags/portfolioImg/port1.png');
-     transform: translateY(1500%);
+     transform: translateY(500%);
+     opacity: 0;
      transition: all .4s ease-out;
     }
     .work2{
-     background-image: url('../../assets/imags/portfolioImg/port2.png');
-     transform: translateY(1500%);
+     background-image: url('../../assets/imags/portfolioImg/port3.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     transform: translateY(500%);
+     opacity: 0;
      transition: all .4s ease-out .4s;
     }
     .work3{
-     background-image: url('../../assets/imags/portfolioImg/port3.png');
-     transform: translateY(1500%);
+     background-image: url('../../assets/imags/portfolioImg/port2.png');
+     transform: translateY(500%);
+     opacity: 0;
      transition: all .4s ease-out .2s;
     }
 
     .init{
         transform: translateY(0%);
+        opacity: 1;
     }

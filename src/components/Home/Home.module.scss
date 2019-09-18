@@ -58,18 +58,22 @@ body{
 
 .img-container-4{
     transition: all .3s ease-out;
+    opacity: 0;
     transform: translateX(300%);
 }
 .img-container-3{
     transition: all .3s ease-out .2s;
+    opacity: 0;
     transform: translateX(300%);
 }
 .img-container-2{
     transition: all .3s ease-out .4s;
+    opacity: 0;
     transform: translateX(300%);
 }
 .img-container-1{
     transition: all .3s ease-out .6s;
+    opacity: 0;
     transform: translateX(300%);
 }
 .active{
@@ -77,6 +81,7 @@ body{
 }
 .init{
     transform: translateX(0%);
+    opacity: 1;
 }
 
 @keyframes mainAnimat{

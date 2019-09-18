@@ -4,3 +4,44 @@
     height: 335px;
     position: relative;
 }
+.content{
+    display: flex;
+    flex-direction: column;
+    div{
+        display: flex;
+        align-items: center;
+        
+        .weak{
+            opacity: 0;
+            transition: all .4s ease-out;
+        }
+        .strong{
+            opacity: 0;
+            transition: all .4s ease-out .2s;
+            font-size: 3rem;
+        }
+        .small{
+            opacity: 0;
+            transition: all .4s ease-out .4s;
+            font-size: 1.5rem;
+        }
+
+        .weak.init{
+            opacity: .6;
+        }
+        .strong.init{
+            opacity: 1;
+        }
+        .small.init{
+            opacity: .4;
+        }
+
+    }
+    h1{
+        color: #FCFCFC;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        font-weight: 500;
+    }
+}

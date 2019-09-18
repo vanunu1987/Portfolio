@@ -28,7 +28,8 @@ margin-left: 51px;
         margin-left: 110px;
         line-height: 21px;
         transform-origin: top left;
-        transform: translateX(-1500%);
+        transform: translateX(-500%);
+        opacity: 0;
         transition: all 1.2s ease-out;
         &::before{
             display: block;
@@ -46,7 +47,8 @@ margin-left: 51px;
         background-image: url('../../assets/imags/aboutImg/about4.png');
         margin-top: 12px;
         margin-left: 55px;
-        transform: translateY(1500%);
+        transform: translateY(500%);
+        opacity: 0;
         transition: all .3s ease-out .8s;
     }
     .img-container-3{
@@ -55,7 +57,8 @@ margin-left: 51px;
         background-image: url('../../assets/imags/aboutImg/about3.png');
         margin-top: 12px;
         margin-left: 78px;
-        transform: translateY(1500%);
+        opacity: 0;
+        transform: translateY(500%);
         transition: all .3s ease-out .6s;
     }
     .img-container-2{
@@ -64,14 +67,16 @@ margin-left: 51px;
         background-image: url('../../assets/imags/aboutImg/about2.png');
         margin-top: 12px;
         margin-left: 43px;
-        transform: translateY(1500%);
+        transform: translateY(500%);
+        opacity: 0;
         transition: all .3s ease-out .4s;
     }
     .img-container-1{
         width: 329px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about1.png');
-        transform: translateY(1500%);
+        transform: translateY(500%);
+        opacity: 0;
         transition: all .3s ease-out .2s;
     }
 
@@ -80,4 +85,5 @@ margin-left: 51px;
     .init{
         transform: rotateY(360deg);
         transform: translateY(0%);
+        opacity: 1;
     }

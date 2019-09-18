@@ -18,7 +18,8 @@
         height: 52px;
         background-image: url('../../assets/imags/contact/contactimg.png');
         margin-left: -30px;
-        transform: translateX(-300%);
+        transform: translateX(-240%);
+        opacity: 0;
         transition: all .4s ease-out;
     }
     .form-container{
@@ -47,7 +48,8 @@
             height: 50px;
             background-image: url('../../assets/imags/contact/nameimg.png');
             margin-top: 13px;
-            transform: translateX(-300%);
+            transform: translateX(-240%);
+            opacity: 0;
             transition: all .4s ease-out .2s;
 
             
@@ -57,7 +59,8 @@
             height: 50px;
             background-image: url('../../assets/imags/contact/email.png');
             margin-top: 13px;
-            transform: translateX(-300%);
+            transform: translateX(-240%);
+            opacity: 0;
             transition: all .4s ease-out .4s;
         
         }
@@ -67,7 +70,8 @@
             background-image: url('../../assets/imags/contact/bodyimg.png');
             margin-top: 13px;
             text-align: left;
-            transform: translateX(300%);
+            transform: translateX(240%);
+            opacity: 0;
             transition: all .4s ease-out .2s;
             textarea{
                 color: white;
@@ -96,17 +100,23 @@
             font-weight: 700;
             font-size: .8rem;
             transform: translateX(1300%);
+            opacity: 0;
             transition: all .4s ease-out;
             cursor: pointer;
+            &:hover{
+                background-color: lighten(#ffde01, 30%)
+            }
             &:focus{
                 outline: none;
 
             }
+            
 
 
         }
         .init{
             transform: translateX(0%);
+            opacity: 1;
         }
     }
     .details{
@@ -142,9 +152,14 @@
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+                background-color: lighten(#ffde01, 30%)
+            }
         }
     }
 
     .init{
         transform: translateX(0%);
+        opacity: 1;
     }
