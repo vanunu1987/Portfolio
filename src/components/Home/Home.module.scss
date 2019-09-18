@@ -11,10 +11,9 @@ body{
     @import url('https://fonts.googleapis.com/css?family=Lato:900&display=swap');
     font-family: 'Lato', sans-serif;
     background-color: #000000;
-    display: flex;
-    align-content: center;
-    justify-content: center;
     height: 335px;
+    width: 800px;
+    position: relative;
    
 }
 
@@ -23,11 +22,9 @@ body{
     width: 365px;
     height: 52px;
     background-image: url('../../assets/imags/hatimgs/hatimg4.png');
-    position: absolute;
-    top: 312px;
-    left: 50%;
-    margin-left: -271px;
+    margin-left: 145px;
     transform-origin: top left;
+    margin-top: -17px;
 
 
 }
@@ -35,21 +32,17 @@ body{
     width: 325px;
     height: 50px;
     background-image: url('../../assets/imags/hatimgs/hatimg3.png');
-    position: absolute;
-    top: 377px;
-    left: 50%;
-    margin-left: -227px;
     transform-origin: top left;
+    margin-top: 13px;
+    margin-left: 189px;
 
 }
 .img-container-2{
     width: 323px;
     height: 50px;
     background-image: url('../../assets/imags/hatimgs/hatimg2.png');
-    position: absolute;
-    top: 440px;
-    left: 50%;
-    margin-left: -85px;
+    margin-top: 13px;
+    margin-left: 329px;
     transform-origin: top left;
 
 }
@@ -57,12 +50,38 @@ body{
     width: 323px;
     height: 50px;
     background-image: url('../../assets/imags/hatimgs/hatimg1.png');
-    position: absolute;
-    top: 502px;
-    left: 50%;
-    margin-left: -225px;
+    margin-top: 13px;
+    margin-left: 189px;
     transform-origin: top left;
 
+}
+
+.img-container-4{
+    transition: all .3s ease-out;
+    transform: translateX(300%);
+}
+.img-container-3{
+    transition: all .3s ease-out .2s;
+    transform: translateX(300%);
+}
+.img-container-2{
+    transition: all .3s ease-out .4s;
+    transform: translateX(300%);
+}
+.img-container-1{
+    transition: all .3s ease-out .6s;
+    transform: translateX(300%);
+}
+.active{
+    transform: translateX(300%);
+}
+.init{
+    transform: translateX(0%);
+}
+
+@keyframes mainAnimat{
+    from {transform: translateX(0%)}
+    to {transform: translateX(-100%)}
 }
 
 @media(max-width:580px){
@@ -70,3 +89,6 @@ body{
         transform: scale(.8)
     }
 }
+
+
+

@@ -1,24 +1,30 @@
 .contact-container{
-    height: 400px;
+    height: 355px;
+    margin-top: 46px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    display: block;
+    overflow: visible
+
 }
 
-
+.contact-container>:nth-child(1){
+    height: 70px;
+}
 
 
     .img-container{
         width: 365px;
         height: 52px;
         background-image: url('../../assets/imags/contact/contactimg.png');
-        position: absolute;
-        top: 311px;
-        left: 50%;
-        margin-left: -271px;
+       margin-left: -30px;
     
     }
     .form-container{
         display: flex;
         flex-direction: column;
-        margin-top: 157px;
+        margin-left: 10px;
 
         .img-container-1,.img-container-2{
             display: flex;
@@ -40,10 +46,6 @@
             width: 485px;
             height: 50px;
             background-image: url('../../assets/imags/contact/nameimg.png');
-            // position: absolute;
-            // top: 311px;
-            // left: 50%;
-            // margin-left: -271px;
             margin-top: 13px;
 
             
@@ -52,10 +54,6 @@
             width: 485px;
             height: 50px;
             background-image: url('../../assets/imags/contact/email.png');
-            // position: absolute;
-            // top: 311px;
-            // left: 50%;
-            // margin-left: -271px;
             margin-top: 13px;
         
         }
@@ -63,10 +61,6 @@
             width: 485px;
             height: 100px;
             background-image: url('../../assets/imags/contact/bodyimg.png');
-            // position: absolute;
-            // top: 311px;
-            // left: 50%;
-            // margin-left: -271px;
             margin-top: 13px;
             text-align: left;
             textarea{

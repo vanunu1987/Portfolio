@@ -3,15 +3,20 @@
 height: 335px;
 }
  
-
+.content-about{
+display: flex;
+margin-left: 51px;
+}
+.img-contant{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 25px;
+    margin-top: -33px;
+}
     .paragraph{
         display: -webkit-box;
         margin: 0;
-        position: absolute;
-        top: 349px;
-        left: 50%;
-        margin-left: -238px;
-        width: 254px;
         height: 234px;
         text-align: left;
         font: Light 16px/22px Lato;
@@ -19,6 +24,12 @@ height: 335px;
         color: #FCFCFC;
         line-break: 10px;
         font-weight: 300;
+        // margin-top: 38px;
+        margin-left: 110px;
+        line-height: 21px;
+        transform-origin: top left;
+        transform: rotateY(90deg);
+        transition: all 1.2s ease-out;
         &::before{
             display: block;
             width: 16px;
@@ -33,37 +44,40 @@ height: 335px;
         width: 198px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about4.png');
-        position: absolute;
-        top: 507px;
-        left: 50%;
-        margin-left: 126px;
-    
+        margin-top: 12px;
+        margin-left: 55px;
+        transform: translateY(1500%);
+        transition: all 1.2s ease-out;
     }
     .img-container-3{
         width: 194px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about3.png');
-        position: absolute;
-        top: 441px;
-        left: 50%;
-        margin-left: 148px;
+        margin-top: 12px;
+        margin-left: 78px;
+        transform: translateY(1500%);
+        transition: all 1.2s ease-out .2s;
     }
     .img-container-2{
-        top: 376px;
-        left: 50%;
-        margin-left: 113px;
         width: 188px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about2.png');
-        position: absolute;
+        margin-top: 12px;
+        margin-left: 43px;
+        transform: translateY(1500%);
+        transition: all 1.2s ease-out .4s;
     }
     .img-container-1{
-        top: 312px;
-        left: 50%;
-        margin-left: 70px;
         width: 329px;
         height: 52px;
         background-image: url('../../assets/imags/aboutImg/about1.png');
-        position: absolute;
-    
+        transform: translateY(1500%);
+        transition: all 1.2s ease-out .6s;
+    }
+
+
+
+    .init{
+        transform: rotateY(360deg);
+        transform: translateY(0%);
     }

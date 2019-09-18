@@ -5,7 +5,7 @@ import HeadTitle from '../HeadTitle/HeadTitle'
 const skills = (props) =>{
     
     return(
-        <div>
+        <div className={classes['skills-container']}>
             <HeadTitle title="SKILLS" activeAnimation={props.activeAnimation}/>
             
         </div>

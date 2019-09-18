@@ -29,7 +29,7 @@ class Layout  extends Component {
           this.setState({animation:true})
           setTimeout(()=>{
               this.setState({activeCmp:val,animation:false})
-          },500)
+          },1150)
 
       }
     render() { 

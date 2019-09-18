@@ -1,12 +1,17 @@
+
+.main-container{
+   
+}
+
 .sub-title{
     @import url('https://fonts.googleapis.com/css?family=Lato:300&display=swap');
     font-family: 'Lato', sans-serif;
-    position: absolute;
-    top: 235px;
+    position: relative;
+    // top: 235px;
     left: 50%;
     width: 396px;
     height: 29px;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0;
     opacity: 1;
     color: #FEFEFE;
@@ -15,6 +20,9 @@
     font-size: 1.5rem;
     margin-left: -200px;
     transition: all 1s;
+    overflow: hidden;
+    box-sizing: border-box;
+    animation: initAnimatSub 1.2s;
     span{
         color: #FFDE00;
 
@@ -22,12 +30,11 @@
     }
 
     .title{
-        position: absolute;
+        position: relative;
     box-sizing: border-box;
-    top: 238px;
+    // top: 238px;
     left: 50%;
-    width: 262px;
-    height: 103px;
+    // width: 262px;
     text-align: left;
     letter-spacing: 0;
     opacity: 1;
@@ -36,40 +43,148 @@
     margin: 0;
     padding: 19px 0px ;
     z-index: 2;
+    padding: 0;
+    margin-top: -5px;
     margin-left: -253px;
-    transition: all .6s ease-out;
+    transition: all 1s  ;
+    overflow: hidden;
+    animation: initAnimat .6s ease-in-out;
     
     &::first-letter{
         color: #FEDD00;
     }
+    
 }
-.active{
-    transform: rotate(45deg) translateY(-200px);
-	opacity: 0;
-	filter: blur(20px);
-}
-.sub-title span{
-    transition-delay: 0.4s;
+h1:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #FEDD00;
+    overflow: hidden;
+    width: 0%;
+    transition: width 1s ease-out, color 1s ease-in .5s;
+    
 
+
+    
+}
+
+
+.active{
+    animation: activeAnimat 1.2s;
+
+    &::before{
+       animation: beforAnimat 1.2s;
+        
+    }
+}
+.activeSub{
+    animation: activeAnimatSub 1.2s;
+
+    &::before{
+       animation: beforAnimatSub 1.2s;
+        
+    }
 }
 
 .active1{
-    transform:translate(-280px,-220px) scale(0) ;
-    opacity: 0;
+    &::before{
+        content: "HOME";
+    }
 }
 .active2{
-    transform:translate(-280px,-200px) scale(0) ;
-    opacity: 0;
+    &::before{
+        content: "ABOUT";
+    }
 }
 .active3{
-    transform:translate(-250px,-150px) scale(0) ;
-    opacity: 0;
+    &::before{
+        content: "PORTFOLIO";
+    }
 }
 .active4{
-    transform:translate(-250px,-120px) scale(0) ;
-    opacity: 0;
+    &::before{
+        content: "SKILLS";
+    }
 }
 .active5{
-    transform:translate(-250px,-100px) scale(0) ;
-    opacity: 0;
+    &::before{
+        content: "CONTACT";
+    }
+}
+
+
+// .active{
+//     transform: rotate(45deg) translateY(-200px);
+// 	opacity: 0;
+// 	filter: blur(20px);
+// }
+// .sub-title span{
+//     transition-delay: 0.4s;
+
+// }
+
+// .active1{
+//     animation-name: activeAnimat;
+//     animation-duration: 1s;
+// }
+// h1.active1:before{
+//   transform: translateX(.3%)
+// }
+// h1.active1:before{
+//     width: 0%;
+//     transition-delay: .6s;
+// }
+// .active2{
+//     transform:translate(-280px,-200px) scale(0) ;
+//     opacity: 0;
+// }
+// .active3{
+//     transform:translate(-250px,-150px) scale(0) ;
+//     opacity: 0;
+// }
+// .active4{
+//     transform:translate(-250px,-120px) scale(0) ;
+//     opacity: 0;
+// }
+// .active5{
+//     transform:translate(-250px,-100px) scale(0) ;
+//     opacity: 0;
+// }
+
+
+@keyframes beforAnimat{
+    0% {width: 0%;}
+    50% {width: 200px;}
+    100% {width: 0%;}
+}
+
+@keyframes activeAnimat{
+    0% {width: 200px;}
+    50% {width: 200px;}
+    100% {width: 0%;}
+}
+
+@keyframes beforAnimatSub{
+    0% {width: 0%;}
+    50% {width: 400px;}
+    100% {width: 0%;}
+}
+
+@keyframes activeAnimatSub{
+    0% {width: 400px;}
+    50% {width: 400px;}
+    100% {width: 0%;}
+}
+
+
+
+// @keyframes initAnimatSub{
+//     from {width: 0%;}
+//     to {width: 500px;}
+// }
+@keyframes initAnimat{
+    from {width: 0%;}
+    to {width: 200px;}
 }

@@ -1,15 +1,22 @@
 
-.main-port-container{
+.port-container{
     height: 335px;
+    margin-top: 46px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    position: relative;
+    
+
 }
 
+.port-container>:nth-child(1){
+    height: 130px;
+}
 
     .portfolio-container{
         display: flex;
-        position: absolute;
-        top: 366px;
-        left: 50%;
-        margin-left: -310px;
         a{
             text-decoration: none;
         }

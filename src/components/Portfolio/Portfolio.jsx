@@ -6,7 +6,7 @@ const portfolio = (props) =>{
     
    
     return(
-        <div className={classes['main-port-container']}>
+        <div className={classes['port-container']}>
             <HeadTitle title="PORTFOLIO" activeAnimation={props.activeAnimation}/>
             <div className={classes['portfolio-container']} >
                 <a href="https://makeappoint.herokuapp.com/">
