@@ -1,31 +1,37 @@
-import React, {useState} from 'react' 
+import React, {useState,useEffect} from 'react' 
 import classes from './Contact.module.scss'
 import HeadTitle from '../HeadTitle/HeadTitle'
 
 const Contact = (props) =>{
+    let [contactClass,setMainClass]= useState('')
+    if (props.activeAnimation && contactClass===` ${classes['init']}`) setMainClass(` ${classes['active']}`)
+    useEffect(() => {
+        setMainClass(` ${classes['init']}`) 
+      },[]);
+   
 
    const [data,setData] = useState({name:'',mail:'test@test.com',body:''})
     return(
         <div className={classes['contact-container']}>
             <HeadTitle title="CONTACT" activeAnimation={props.activeAnimation}/>
-            <div className={classes['img-container']}></div>
+            <div className={classes['img-container']+contactClass}></div>
             <form className={classes['form-container']} onSubmit={(ev)=>{
                 ev.preventDefault()
                 let str=`https://mail.google.com/mail/?view=cm&fs=1&to=vanunu24@gmail.com&su=${data.name}&body=${data.body}`
                 window.open(str)
                 }}>
-                <div className={classes['img-container-1']} placeholder=" Name">
+                <div className={classes['img-container-1']+contactClass} placeholder=" Name">
                     <input type="text" placeholder=" Name" 
                     onChange={(ev)=>setData({...data,name:ev.target.value})}/>
                 </div>
-                <div className={classes['img-container-2']} >
+                <div className={classes['img-container-2']+contactClass} >
                     <input type="email" placeholder=" Email Address" />
                 </div>
-                <div className={classes['img-container-3']} >
+                <div className={classes['img-container-3']+contactClass} >
                     <textarea rows="5" cols="57" type="text" placeholder=" Your Message" 
                     onChange={(ev)=>setData({...data,body:ev.target.value})}/>
                 </div>
-                <button className={classes['send-btn']}>Send</button>
+                <button className={classes['send-btn']+contactClass}>Send</button>
             </form>
             <div className={classes['details']}>
                <div> 

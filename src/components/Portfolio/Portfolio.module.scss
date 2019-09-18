@@ -1,11 +1,6 @@
 
 .port-container{
     height: 335px;
-    margin-top: 46px;
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
     position: relative;
     
 
@@ -50,12 +45,20 @@
     }
     .work1{
      background-image: url('../../assets/imags/portfolioImg/port1.png');
+     transform: translateY(1500%);
+     transition: all .4s ease-out;
     }
     .work2{
      background-image: url('../../assets/imags/portfolioImg/port2.png');
+     transform: translateY(1500%);
+     transition: all .4s ease-out .4s;
     }
     .work3{
      background-image: url('../../assets/imags/portfolioImg/port3.png');
+     transform: translateY(1500%);
+     transition: all .4s ease-out .2s;
     }
 
-    
+    .init{
+        transform: translateY(0%);
+    }
