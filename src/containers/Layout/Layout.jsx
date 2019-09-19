@@ -32,15 +32,13 @@ class Layout  extends Component {
           setTimeout(()=>{
               this.setState({activeCmp:val,animation:false})
           },1150)
-          this.handleClick()
+          if (this.state.isShow) this.handleClick()
       }
 
       handleClick = ()=>{
           this.setState(prevState=>{
               let {isShow} = prevState
               let newIsShow = !isShow
-              console.log(newIsShow);
-              
               return{
                 isShow: newIsShow
               }
