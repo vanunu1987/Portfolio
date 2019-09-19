@@ -163,3 +163,39 @@
         transform: translateX(0%);
         opacity: 1;
     }
+
+    @media(max-width:580px){
+
+        .contact-container{
+            margin-top: 220px;
+            height: 405px;
+           
+        }
+        .img-container{
+            transform: scale(.7);
+            margin-top: -5px;
+            margin-left: 18px;
+        }
+        .form-container{
+            width: 385px;
+            margin: 0px;
+        .img-container-1,.img-container-2,.img-container-3{
+            margin-top: -5px;
+            transform: scale(.7);
+            width: 385px;
+        }
+        .send-btn{
+            align-self: center;
+            margin-top: -5px;
+            transform: scale(.7);
+        }
+        
+
+    }
+    .details{
+        width: 380px;
+    }
+    .sotial-net{
+        width: 100px;
+    }
+    }

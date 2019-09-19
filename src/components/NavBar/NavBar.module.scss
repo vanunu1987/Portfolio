@@ -59,3 +59,24 @@ ul,li{
     0% {opacity: 0}
     100% {opacity: 1}
 }
+
+@media(max-width:580px){
+    .ul-container{
+        position: fixed;
+            top: 0;
+            left: 0px;
+            width: 30vw;
+            height: 100vh;
+            padding: 20px 40px;
+            margin-top: 0;
+            z-index: 101;
+            margin-left: 0px;
+            background-color: #484848ab;
+            transform: translateX(-100%);
+            transition: all .3s ease;
+        }
+       .show{
+            transform: translateX(0%)
+        }    
+
+}

@@ -69,3 +69,22 @@
         transform: translateY(0%);
         opacity: 1;
     }
+
+    @media(max-width:580px){
+
+        .port-container{
+            margin-top: 220px;
+            height: 260px;
+            a{
+                width: 120px;
+                height: 110px;
+                margin-left: 3px;
+            }
+        }
+        .work1,.work2,.work3{
+            transform: scale(.6);
+            transform-origin: top left;
+            margin-left: 3px;
+        }
+
+    }

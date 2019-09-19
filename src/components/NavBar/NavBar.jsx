@@ -7,10 +7,10 @@ const NavBar = (props) =>{
     className={props.activeCmp===cmp ? animationClass:''}>
     {cmp.toUpperCase()}
     </li>))
-    
+    let dropClass = (props.isShow)? ` ${classes['show']}`: ''
     return(
     <div className={classes['nav-container']}>
-        <ul className={classes['ul-container']}>
+        <ul className={classes['ul-container']+dropClass}>
             {navList}
         </ul>
     </div>

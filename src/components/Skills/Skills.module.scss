@@ -45,3 +45,41 @@
         font-weight: 500;
     }
 }
+
+ @media(max-width:580px){
+
+    .skills-container{
+        margin-top: 220px;
+        height: 260px;
+    }
+    div{
+    .weak{
+        opacity: 0;
+        transition: all .4s ease-out;
+        font-size: .5rem;
+    }
+    .strong{
+        opacity: 0;
+        transition: all .4s ease-out .2s;
+        font-size: 1.5rem;
+    }
+    .small{
+        opacity: 0;
+        transition: all .4s ease-out .4s;
+        font-size: 1rem;
+    }
+    .weak.init{
+        opacity: .6;
+        font-size: .5rem;
+    }
+    .strong.init{
+        opacity: 1;
+        font-size: 2rem;
+    }
+    .small.init{
+        opacity: .4;
+        font-size: 1rem;
+    }
+}
+
+}

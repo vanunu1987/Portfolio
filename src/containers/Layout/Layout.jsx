@@ -7,6 +7,7 @@ import Contact from '../../components/Contact/Contact'
 import Skills from '../../components/Skills/Skills'
 import NavBar from '../../components/NavBar/NavBar'
 import Paging from '../../components/Paging/Paging'
+import Backdrop from '../../components/UI/Backdrop/Backdrop'
 
 class Layout  extends Component {
     state = { 
@@ -20,7 +21,8 @@ class Layout  extends Component {
         },
        
         activeCmp: 'home',
-        animation: false
+        animation: false,
+        isShow: false
      }
 
     
@@ -30,7 +32,19 @@ class Layout  extends Component {
           setTimeout(()=>{
               this.setState({activeCmp:val,animation:false})
           },1150)
+          this.handleClick()
+      }
 
+      handleClick = ()=>{
+          this.setState(prevState=>{
+              let {isShow} = prevState
+              let newIsShow = !isShow
+              console.log(newIsShow);
+              
+              return{
+                isShow: newIsShow
+              }
+          })
       }
     render() { 
         const Tagname = this.state.component[this.state.activeCmp||'home']
@@ -38,10 +52,14 @@ class Layout  extends Component {
         return ( 
             <>
             <div className={classes['layout-container']}>
+                <Backdrop show={this.state.isShow} clicked={this.handleClick}/>
+                <button className={`fas fa-bars ${classes['hamburger-btn']}`}
+                onClick={this.handleClick}></button>
                 <NavBar components={this.state.component} 
                 active={(val)=>this.handleActiveButtom(val)}
                 activeCmp={this.state.activeCmp}
-                activeAnimation={this.state.animation}/>
+                activeAnimation={this.state.animation}
+                isShow={this.state.isShow}/>
                 <div className={classes['main-container']}>
                         <Tagname activeAnimation={this.state.animation}/>
                 </div>

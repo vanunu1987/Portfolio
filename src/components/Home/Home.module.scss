@@ -90,8 +90,29 @@ body{
 }
 
 @media(max-width:580px){
+    .main-container{
+        width: 350px;
+        margin-top: 220px;
+        height: 260px;
+    }
     .img-container-4,.img-container-3,.img-container-2,.img-container-1{
-        transform: scale(.8)
+        transform: scale(.7);
+    }
+    .img-container-1{
+        margin-top: -5px;
+        margin-left: 30px;
+    }
+    .img-container-2{
+        margin-top: -5px;
+        margin-left: 130px;
+    }
+    .img-container-3{
+        margin-top: -5px;
+        margin-left: 32px;
+    }
+    .img-container-4{
+        margin-top: -5px;
+        margin-left: 0px;
     }
 }
 
