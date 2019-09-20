@@ -8,6 +8,7 @@ import Skills from '../../components/Skills/Skills'
 import NavBar from '../../components/NavBar/NavBar'
 import Paging from '../../components/Paging/Paging'
 import Backdrop from '../../components/UI/Backdrop/Backdrop'
+import Swipe from 'react-easy-swipe';
 
 class Layout  extends Component {
     state = { 
@@ -44,11 +45,29 @@ class Layout  extends Component {
               }
           })
       }
+
+      onSwipeStart(event) {
+        console.log('Start swiping...', event);
+      }
+     
+      onSwipeMove(position, event) {
+        console.log(`Moved ${position.x} pixels horizontally`, event);
+        console.log(`Moved ${position.y} pixels vertically`, event);
+      }
+     
+      onSwipeEnd(event) {
+        console.log('End swiping...', event);
+      }
+    
     render() { 
         const Tagname = this.state.component[this.state.activeCmp||'home']
         
         return ( 
             <>
+            <Swipe
+            onSwipeStart={this.onSwipeStart}
+            onSwipeMove={this.onSwipeMove}
+            onSwipeEnd={this.onSwipeEnd}>
             <div className={classes['layout-container']}>
                 <Backdrop show={this.state.isShow} clicked={this.handleClick}/>
                 <button className={`fas fa-bars ${classes['hamburger-btn']}`}
@@ -67,6 +86,7 @@ class Layout  extends Component {
                 activeCmp={this.state.activeCmp}
                 />
             </div>
+            </Swipe>
             </>
          );
     }
