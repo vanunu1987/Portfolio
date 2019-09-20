@@ -48,15 +48,18 @@ class Layout  extends Component {
 
       onSwipeStart(event) {
         console.log('Start swiping...', event);
+        alert('Start swiping...', event)
       }
      
       onSwipeMove(position, event) {
         console.log(`Moved ${position.x} pixels horizontally`, event);
         console.log(`Moved ${position.y} pixels vertically`, event);
+        alert(`Moved ${position.x} pixels horizontally`, event)
       }
      
       onSwipeEnd(event) {
         console.log('End swiping...', event);
+        alert('End swiping...', event)
       }
     
     render() { 
