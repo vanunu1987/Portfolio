@@ -48,7 +48,7 @@ class Layout  extends Component {
 
       onSwipeStart(event) {
         console.log('Start swiping...', event);
-        alert('Start swiping...', event)
+        // alert('Start swiping...', event)
       }
      
       onSwipeMove(position, event) {
@@ -59,8 +59,9 @@ class Layout  extends Component {
      
       onSwipeEnd(event) {
         console.log('End swiping...', event);
-        alert('End swiping...', event)
+        // alert('End swiping...', event)
       }
+
     
     render() { 
         const Tagname = this.state.component[this.state.activeCmp||'home']
