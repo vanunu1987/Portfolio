@@ -56,7 +56,7 @@ class Layout  extends Component {
       onSwipeMove(position, event) {
         console.log(`Moved ${position.x} pixels horizontally`, event);
         console.log(`Moved ${position.y} pixels vertically`, event);
-        // alert(`Moved ${position.x} pixels horizontally`, event)
+        alert(`Moved ${position.x} pixels horizontally`, event)
         if (position.x>15) {
             this.setState(prevState=>{
                 let newPage = prevState.pageNum + 1
