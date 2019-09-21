@@ -65,7 +65,7 @@ class Layout  extends Component {
                 }
             })
             let activeCmp = this.state.activeArr[this.state.pageNum]
-            alert(activeCmp)
+            alert(`${activeCmp}`)
             this.handleActiveButtom(activeCmp)
         // }
 
