@@ -56,7 +56,7 @@ class Layout  extends Component {
       onSwipeMove(position, event) {
         console.log(`Moved ${position.x} pixels horizontally`, event);
         console.log(`Moved ${position.y} pixels vertically`, event);
-        alert(`Moved ${position.x} pixels horizontally`, event)
+        // alert(`Moved ${position.x} pixels horizontally`, event)
         // if (+position.x>5) {
             this.setState(prevState=>{
                 let newPage = prevState.pageNum + 1
@@ -65,7 +65,7 @@ class Layout  extends Component {
                 }
             })
             let activeCmp = this.state.activeArr[this.state.pageNum]
-            alert(`${activeCmp}`)
+            alert(`active cmp ${activeCmp}`)
             this.handleActiveButtom(activeCmp)
         // }
 
