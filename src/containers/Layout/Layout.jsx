@@ -48,35 +48,33 @@ class Layout  extends Component {
           })
       }
 
-      onSwipeStart(event) {
-        console.log('Start swiping...', event);
-        // alert('Start swiping...', event)
-      }
-     
-      onSwipeMove(position, event) {
-        console.log(`Moved ${position.x} pixels horizontally`, event);
-        console.log(`Moved ${position.y} pixels vertically`, event);
-        // alert(`Moved ${position.x} pixels horizontally`, event)
-        // if (+position.x>5) {
-            alert(`acttest 9ive cmp ${this.state.pageNum} `)
-            let activeCmp = this.state.activeArr[this.state.pageNum]
-            this.setState(prevState=>{
-                let newPage = prevState.pageNum + 1
-                return{
-                    pageNum: newPage
+    
+
+      onSwipeLeft(){
+          this.this.setState(prevState=>{
+              if (prevState.pageNum===4)return
+              let newPage = prevState.pageNum + 1
+              let activeCmp = this.state.activeArr[newPage]
+              this.this.handleActiveButtom(activeCmp)
+              return{
+                  pageNum: newPage
                 }
             })
             
-            this.handleActiveButtom(activeCmp)
-        // }
-
+        
+          
       }
-     
-      onSwipeEnd(event) {
-        console.log('End swiping...', event);
-        // alert('End swiping...', event)
+      onSwipeRight(){
+        this.this.setState(prevState=>{
+            if (prevState.pageNum===0)return
+            let newPage = prevState.pageNum - 1
+            let activeCmp = this.state.activeArr[newPage]
+            this.this.handleActiveButtom(activeCmp)
+            return{
+                pageNum: newPage
+              }
+          })
       }
-
     
     render() { 
         const Tagname = this.state.component[this.state.activeCmp||'home']
@@ -84,9 +82,10 @@ class Layout  extends Component {
         return ( 
             <>
             <Swipe
-            onSwipeStart={this.onSwipeStart}
-            onSwipeMove={this.onSwipeMove}
-            onSwipeEnd={this.onSwipeEnd}>
+            onSwipeLeft={this.onSwipeLeft}
+            onSwipeRight={this.onSwipeRight}
+            state={this.state}
+            this={this}>
             <div className={classes['layout-container']}>
                 <Backdrop show={this.state.isShow} clicked={this.handleClick}/>
                 <button className={`fas fa-bars ${classes['hamburger-btn']}`}
