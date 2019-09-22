@@ -58,7 +58,7 @@ class Layout  extends Component {
         console.log(`Moved ${position.y} pixels vertically`, event);
         // alert(`Moved ${position.x} pixels horizontally`, event)
         // if (+position.x>5) {
-            alert(`acttest 9ive cmp `)
+            alert(`acttest 9ive cmp ${this.state.pageNum} `)
             let activeCmp = this.state.activeArr[this.state.pageNum]
             this.setState(prevState=>{
                 let newPage = prevState.pageNum + 1
